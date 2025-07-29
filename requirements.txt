@@ -1,0 +1,35 @@
+# Core dependencies
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+tqdm
+requests
+beautifulsoup4
+
+# Date & location
+geopy
+
+# Google Trends and News
+pytrends
+GoogleNews
+
+# PyTorch and Lightning
+torch
+pytorch-lightning==1.9.3
+
+# GitHub API
+PyGithub==1.58.0
+
+# Geospatial
+geopandas
+
+# Optional but mentioned (used internally)
+shapely  # often required by geopandas
+fiona    # often required by geopandas
+pyproj   # often required by geopandas
+
+# Specific version fix for urllib3 if needed
+urllib3==1.26.20
