@@ -2,15 +2,11 @@
 
 In this repository a workflow is set up to update our [avian influenza forecasting dashboard](https://aimmlab.org/early-warning-system-for-avian-influenza-outbreaks) every 4 days. The python file - UpdateData.py - is composed of 4 parts:
 - Collecting data from 4 different sources:
-	> [Avian influenza cases in wild birds in Canada](https://www.arcgis.com/apps/dashboards/89c779e98cdf492c899df23e1c38fdbc)
- > 
-	> [Google Trends](https://trends.google.com/trends/explore?date=now%201-d&geo=CA&q=%2Fm%2F0292d3&hl=en)
-> 
-	> Google News
-> 
-	> Reddit
-> 
-	> GDELT
+    * [Avian influenza cases in wild birds in Canada](https://www.arcgis.com/apps/dashboards/89c779e98cdf492c899df23e1c38fdbc)
+    * [Google Trends](https://trends.google.com/trends/explore?date=now%201-d&geo=CA&q=%2Fm%2F0292d3&hl=en)
+    * Google News
+    * Reddit
+    * GDELT
 - Building a GRU model using PyTorch
 - Training the GRU model for forecasting avian influenza in the next 14 days
 - Forecasting avian influenza cases in the next 14 days
