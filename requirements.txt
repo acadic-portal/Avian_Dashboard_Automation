@@ -8,6 +8,7 @@ scikit-learn
 tqdm
 requests
 beautifulsoup4
+openpyxl  # Required for pandas Excel read/write support
 
 # Date & location
 geopy
@@ -33,3 +34,4 @@ pyproj   # often required by geopandas
 
 # Specific version fix for urllib3 if needed
 urllib3==1.26.20
+
