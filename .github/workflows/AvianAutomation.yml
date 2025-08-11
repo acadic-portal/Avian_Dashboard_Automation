@@ -2,13 +2,13 @@ name: Run Avian Influenza Forecast Every 4 Days
 
 on:
   schedule:
-    - cron: '0 0 */4 * *'  # every 4 days at 00:00 UTC
+    - cron: '0 0 */6 * *' #'0 0 */4 * *'  # every 4 days at 00:00 UTC
   workflow_dispatch:
 
 jobs:
   run-influenza-model:
     runs-on: ubuntu-latest
-    timeout-minutes: 360  # 6 hours max
+    timeout-minutes: 240 #360  # 6 hours max
 
     steps:
       - name: Checkout Repository
