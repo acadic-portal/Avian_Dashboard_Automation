@@ -135,7 +135,11 @@ while pd.to_datetime(s) <= pd.to_datetime(end):
     avian2['Language'] = ['French']*len(avian2)
     avian2['Province'] = ['Whole Country']*len(avian2)
 
-    googlen = pd.concat([googlen, avian1, avian2])
+    #googlen = pd.concat([googlen, avian1, avian2])
+    if len(googlen) == 0:
+        googlen = pd.concat([avian1, avian2])
+    else:
+        googlen = pd.concat([googlen, avian1, avian2])
 
     if len(googlen) - previous > 50:
         googlen.to_csv ('gn1.csv', index= False)
@@ -1368,6 +1372,7 @@ if gdelt_success == True:
     gdelt0 = open('gdelt.csv', 'r')
     dummy4_0 = gdelt0.read()
     repo.update_file (dummy4.path, 'Last Updated: '+date.today().strftime("%d/%m/%Y"), dummy4_0, dummy4.sha)
+
 
 
 
